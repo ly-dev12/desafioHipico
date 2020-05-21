@@ -1,0 +1,46 @@
+{{#each returnusers}}
+
+    {{#if active}}
+
+   <div class="container mp-5 mt-5">
+        <div class="form-group">
+            <div class="media row">
+                <div class="col-sm-1">
+                    <h1><i class="item fas fa-user ml-4"></i></h1>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="mt-1">Username: {{username}}</h5>
+                        </div>
+                        <div class="col">
+                            <h5>Role: {{role}}</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Email: {{email}}</h5>
+                        </div>
+                        <div class="col">
+                            {{#if status}}
+                            <h5>Status: Online</h5>
+                            {{else}}
+                            <h5>Status: Offline</h5>
+                            {{/if}}
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a type="submit" href="/profile/vivists/{{username}}" class="ml-9 mt-3 view btn btn-success btn-block">View Profile</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+                    
+                    
+               
+
+    {{/if}}
+{{/each}}

@@ -1,0 +1,23 @@
+<div class="container p-4">
+  <div class="row">
+
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Restablecer contraseña</h3>
+        </div>
+        <div class="card-body">
+          <form action="/restore-password/code/verify/{{restorepass._id}}" method="POST">
+            <div class="form-group">
+              <input type="text" name="coderest" placeholder="Codigo" class="form-control" autofocus>
+            </div>
+            <button class="btn btn-primary btn-block">
+              Verificar
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

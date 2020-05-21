@@ -1,0 +1,25 @@
+<div class="container p-4">
+  <div class="row">
+
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Confirma tu cuenta</h3>
+        </div>
+        <p>Si usted ah olvidado su contraseña puede restablecerla aún, introduzca su correo en el campo y confime con el
+          codigo de verficiacion que le llego a su correo de una vez hecho eso podra restablecer su contraseña</p>
+        <div class="card-body">
+          <form action="/restore-password/restore/email" method="POST">
+            <div class="form-group">
+              <input type="text" name="email" placeholder="Email" class="form-control" autofocus>
+            </div>
+            <button class="btn btn-primary btn-block">
+              Enviar
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
